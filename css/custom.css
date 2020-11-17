@@ -1,0 +1,46 @@
+/** ADD YOUR AWESOME CODES HERE **/
+
+/* rotate the cross menu when it click */
+#icon-bar {
+  transition: 0.4s;
+}
+.change div #icon-bar{
+	background-color: red;
+	color:blue;
+}
+
+ .change #icon-bar-1{
+  -webkit-transform: rotate(-45deg) translate(-5px, 5px);
+  transform: rotate(-45deg) translate(-5px, 5px);
+  background-color: red;
+ 
+}
+
+ .change #icon-bar-2{
+  transform: translate(-10px, 0px);
+  opacity: 0;
+}
+
+ .change #icon-bar-3{
+-webkit-transform: rotate(45deg) translate(-4px, -5px);
+  transform: rotate(45deg) translate(-4px, -5px);
+  background-color: red;
+ 
+}
+
+/* quotes box */
+.quote_box{
+	background-color: rgba(255, 255, 255, 0.2);
+	padding: 10px;
+	margin-top: 220px;
+	
+}
+.second_slide_text .quote_author{
+	font-style: italic;
+	text-align: right;
+	color: red;
+}
+.second_slide_text .quote{
+	font-size: 30px;
+	color:red;
+}

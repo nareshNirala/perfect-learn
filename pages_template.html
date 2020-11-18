@@ -49,7 +49,7 @@
 <!--Adding the header of page -->
 
 <div id="header"> </div>
-	<h1> Hello World! </h1>
+	<h1 id="text"> Hello World! </h1>
 
 	<button class="btn btn-primary" id="header-btn"> Click me </button>
 <!-- Adding footer of the page -->
@@ -60,7 +60,12 @@
 
 <!-- Load the header and footer of the page -->
 <script>
-
+$(document).ready(function(){
+	$("#header-btn").on('click', function(){
+	$("#text").toggle();
+	  
+	});
+});
 </script>
 
 </body>

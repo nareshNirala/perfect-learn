@@ -57,10 +57,14 @@
 <!-- Load the header and footer of the page -->
 <script>
 $(document).ready(function(){
-$("#header-btn").on('click',function(){
-$('#footer').load("footer.html");
-})
-	$("#header).load("header.html");
+ $("#header").load("header.html", function(responseTxt, statusTxt, xhr){
+    if(statusTxt == "success")
+      alert("External content loaded successfully!");
+    if(statusTxt == "error")
+      alert("Error: " + xhr.status + ": " + xhr.statusText);
+  });
+$('#header-btn').on('click', funtion(){
+		    $('#footer').text("This is a footer.");
 
 })
 </script>

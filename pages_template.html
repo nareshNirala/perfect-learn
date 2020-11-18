@@ -28,19 +28,7 @@
  </script>
 
 <script>
- jQuery(function() {
-    jQuery.ajax({
-        url: '/header.html',
-        dataType: 'html',
-        success: function(data) {
-            $('#header').html(data);
-        },
-        error: function(xhr, error){
-            alert('error. see console for details');
-            console.error(error);
-        }
-    });
-});
+
 
 
    
@@ -75,6 +63,7 @@ $(document).ready(function(){
 $(".btn").on('click',function(){
 $('.text').toggle()
 })
+	$("#header).load("header.html");
 
 })
 </script>
